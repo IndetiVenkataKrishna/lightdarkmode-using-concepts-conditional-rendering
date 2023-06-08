@@ -1,0 +1,1014 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "light-dark-mode",
+      "private": true,
+      "version": "1.0.0",
+      "engines": {
+        "node": "^10.13 || 12 || 14 || 15",
+        "npm": ">=6"
+      },
+      "dependencies": {
+        "@testing-library/jest-dom": "5.11.9",
+        "@testing-library/react": "11.2.5",
+        "@testing-library/user-event": "12.6.2",
+        "chalk": "4.1.0",
+        "react": "17.0.1",
+        "react-dom": "17.0.1"
+      },
+      "devDependencies": {
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-prettier": "8.1.0",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "lint-staged": "10.5.4",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.2.1",
+        "react-scripts": "4.0.3"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix src/",
+        "format": "prettier --write \"./src\"",
+        "run-all": "npm-run-all --parallel test lint:fix"
+      },
+      "lint-staged": {
+        "*.js": [
+          "npm run lint:fix"
+        ],
+        "*.{js, jsx, json, html, css}": [
+          "npm run format"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "jest": {
+        "collectCoverageFrom": [
+          "src/**/*.js"
+        ]
+      },
+      "browserslist": {
+        "development": [
+          "last 2 chrome versions",
+          "last 2 firefox versions",
+          "last 2 edge versions"
+        ],
+        "production": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 11"
+        ]
+      }
+    },
+    "prefix": "/home/workspace/reactjs/coding-practices/lightDarkMode"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/workspace/.pnpm-store/v3",
+    "virtualStoreDir": "/home/workspace/reactjs/coding-practices/lightDarkMode/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-airbnb",
+      "rawSpec": "18.2.1"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-prettier",
+      "rawSpec": "3.3.1"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/husky/4.3.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "4.3.8"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-all/4.1.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "npm-run-all",
+      "rawSpec": "4.1.5"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "5.11.9"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "2.2.1"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "11.2.5"
+    }
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "chalk",
+      "rawSpec": "4.1.0"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "12.6.2"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lint-staged/10.5.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": "10.5.4"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/4.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "4.0.3"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/find-versions/4.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "find-versions",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-versions/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "48 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.assign/4.1.4",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "object.assign",
+      "rawSpec": "^4.1.2"
+    }
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.assign/4.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "50 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "please-upgrade-node",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "52 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/find-versions/4.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.assign/4.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "55 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "cosmiconfig",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "56 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "57 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "chalk",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "58 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/2.4.2",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "chalk",
+      "rawSpec": "^2.4.1"
+    }
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/2.4.2",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "62 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/slash/3.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "slash",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/slash/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "65 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/compare-versions/3.6.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "compare-versions",
+      "rawSpec": "^3.6.0"
+    }
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/compare-versions/3.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/compare-versions/3.6.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "68 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ci-info/2.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "ci-info",
+      "rawSpec": "^2.0.0"
+    }
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ci-info/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "70 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "opencollective-postinstall",
+      "rawSpec": "^2.0.2"
+    }
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ci-info/2.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/opencollective-postinstall/2.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "74 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "which-pm-runs",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "75 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "76 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "chalk",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "78 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/object.entries/1.1.6",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "object.entries",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.entries/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "80 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "wanted": {
+      "dependentId": "/eslint-config-airbnb/18.2.1",
+      "name": "eslint-config-airbnb-base",
+      "rawSpec": "^14.2.1"
+    }
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "82 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/which-pm-runs/1.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "83 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/object.entries/1.1.6",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "85 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb-base/14.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "86 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/3.2.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "ansi-styles",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "88 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/3.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "89 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-spawn/6.0.5",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "cross-spawn",
+      "rawSpec": "^6.0.5"
+    }
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/6.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "91 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-spawn/6.0.5",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "92 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/memorystream/0.3.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "memorystream",
+      "rawSpec": "^0.3.1"
+    }
+  },
+  "93 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/memorystream/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "94 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/memorystream/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "95 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/read-pkg/3.0.0",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "read-pkg",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "96 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/read-pkg/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "97 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/ansi-styles/4.3.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.0",
+      "name": "ansi-styles",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "98 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "99 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "wanted": {
+      "dependentId": "/eslint-plugin-prettier/3.3.1",
+      "name": "prettier-linter-helpers",
+      "rawSpec": "^1.0.0"
+    }
+  },
+  "100 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/read-pkg/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "102 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/ansi-styles/4.3.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "103 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-linter-helpers/1.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "104 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pkg-dir/5.0.0",
+    "wanted": {
+      "dependentId": "/husky/4.3.8",
+      "name": "pkg-dir",
+      "rawSpec": "^5.0.0"
+    }
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pkg-dir/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "106 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pkg-dir/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "108 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string.prototype.padend/3.1.4",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "string.prototype.padend",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string.prototype.padend/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "110 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string.prototype.padend/3.1.4",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "111 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pidtree/0.3.1",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "pidtree",
+      "rawSpec": "^0.3.0"
+    }
+  },
+  "112 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pidtree/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "113 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cosmiconfig/7.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "cosmiconfig",
+      "rawSpec": "^7.0.0"
+    }
+  },
+  "114 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pidtree/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "115 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/minimatch/3.1.2",
+    "wanted": {
+      "dependentId": "/npm-run-all/4.1.5",
+      "name": "minimatch",
+      "rawSpec": "^3.0.4"
+    }
+  },
+  "116 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "117 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/minimatch/3.1.2",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "118 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.6",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "@types/testing-library__jest-dom",
+      "rawSpec": "^5.9.1"
+    }
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.6",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "120 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.14.6",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "121 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "css",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "123 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "124 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css.escape/1.5.1",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "css.escape",
+      "rawSpec": "^1.5.1"
+    }
+  },
+  "125 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "126 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "127 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "lodash",
+      "rawSpec": "^4.17.15"
+    }
+  },
+  "128 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "129 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.3",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.9.2"
+    }
+  },
+  "130 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.22.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "131 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.3",
+    "wanted": {
+      "dependentId": "/@testing-library/react/11.2.5",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "132 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.22.3",
+    "wanted": {
+      "dependentId": "/@testing-library/user-event/12.6.2",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "133 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/please-upgrade-node/3.2.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "please-upgrade-node",
+      "rawSpec": "^3.2.0"
+    }
+  },
+  "134 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/redent/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.11.9",
+      "name": "redent",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "136 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/string-argv/0.3.1",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "string-argv",
+      "rawSpec": "0.3.1"
+    }
+  },
+  "137 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-argv/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "138 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "139 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "140 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/supports-color/7.2.0",
+    "wanted": {
+      "dependentId": "/chalk/4.1.0",
+      "name": "supports-color",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "141 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "142 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.22.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/string-argv/0.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "144 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/core/7.12.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@babel/core",
+      "rawSpec": "7.12.3"
+    }
+  },
+  "145 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.12.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "146 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/supports-color/7.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "147 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@pmmmwh/react-refresh-webpack-plugin",
+      "rawSpec": "0.4.3"
+    }
+  },
+  "148 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "149 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "wanted": {
+      "dependentId": "/react-scripts/4.0.3",
+      "name": "@svgr/webpack",
+      "rawSpec": "5.5.0"
+    }
+  },
+  "150 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "151 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.12.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "152 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/0.4.3",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "153 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@svgr/webpack/5.5.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  },
+  "154 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cli-truncate/2.1.0",
+    "wanted": {
+      "dependentId": "/lint-staged/10.5.4",
+      "name": "cli-truncate",
+      "rawSpec": "^2.1.0"
+    }
+  },
+  "155 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-truncate/2.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "resolved"
+  },
+  "156 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cli-truncate/2.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/lightDarkMode",
+    "status": "found_in_store"
+  }
+}
